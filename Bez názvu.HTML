@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WebForge PRO</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    .text-green-custom { color: #00FF00; }
+    .bg-custom-dark { background-color: #121212; }
+    .border-custom { border-color: #333333; }
+  </style>
+</head>
+<body class="bg-black text-white">
+
+  <!-- Navigácia -->
+  <nav class="flex justify-between items-center px-8 py-4 bg-black border-b border-gray-800">
+    <div class="font-bold text-xl">WEBFORGE PRO</div>
+    <ul class="flex space-x-6 text-sm">
+      <li><a href="#home" class="hover:text-green-custom">Domov</a></li>
+      <li><a href="#about" class="hover:text-green-custom">O nás</a></li>
+      <li><a href="#services" class="hover:text-green-custom">Služby</a></li>
+      <li><a href="#pricing" class="hover:text-green-custom">Ceny</a></li>
+      <li><a href="#contact" class="border border-white px-3 py-1 hover:bg-green-custom hover:text-black rounded">KONTAKT</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero sekcia -->
+  <header id="home" class="relative h-screen bg-cover bg-center flex items-center justify-center text-white" style="background-image:url('images/hero-ai.png');">
+    <div class="bg-black/60 absolute inset-0"></div>
+    <div class="relative text-center z-10">
+      <h1 class="text-5xl md:text-6xl font-bold text-green-400">Revolučný web dizajn s AI</h1>
+      <p class="mt-4 text-xl text-gray-300">Premeňte nápad na realitu do pár minút.</p>
+      <a href="#services" class="mt-6 inline-block bg-green-400 text-black font-semibold px-6 py-3 rounded-full hover:bg-green-300 transition">Zobraziť služby</a>
+    </div>
+  </header>
+
+  <!-- Sekcia: Služby -->
+  <section id="services" class="bg-black py-20 px-8 border-t border-custom">
+    <div class="max-w-6xl mx-auto">
+      <p class="text-green-custom uppercase tracking-wide mb-2">Naše služby</p>
+      <h2 class="text-4xl font-bold mb-8">Tvorba webových stránok s AI</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <!-- AI -->
+        <div class="bg-gray-900 rounded-lg shadow overflow-hidden">
+          <img src="images/hero-ai.png" alt="AI tvorba" class="w-full h-48 object-cover" />
+          <div class="p-4">
+            <h3 class="text-xl font-semibold">Tvorba webových stránok →</h3>
+            <p class="mt-2 text-gray-400">Pomôžeme vám vytvoriť unikátne webové stránky.</p>
+          </div>
+        </div>
+        <!-- SEO -->
+        <div class="bg-gray-900 rounded-lg shadow overflow-hidden">
+          <img src="images/seo-screen.png" alt="SEO" class="w-full h-48 object-cover" />
+          <div class="p-4">
+            <h3 class="text-xl font-semibold">Optimalizácia pre vyhľadávače (SEO) →</h3>
+            <p class="mt-2 text-gray-400">Zvýšime vašu viditeľnosť na internete.</p>
+          </div>
+        </div>
+        <!-- Ikony -->
+        <div class="bg-gray-900 rounded-lg shadow overflow-hidden">
+          <img src="images/icons-metal.png" alt="Dizajn" class="w-full h-48 object-cover" />
+          <div class="p-4">
+            <h3 class="text-xl font-semibold">Tvorba obsahu →</h3>
+            <p class="mt-2 text-gray-400">Vytvoríme pútavý obsah pre váš web.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-black text-center py-6 border-t border-gray-800 text-gray-500 text-sm">
+    © 2025 WebForge PRO. Tvorené s víziou budúcnosti.
+  </footer>
+
+</body>
+</html>
